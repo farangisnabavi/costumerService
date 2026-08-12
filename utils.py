@@ -29,3 +29,9 @@ def search_products_by_name(name):
         for item in productList:
             if name in item['name']:
                 print("id: ", item['id'],"\nname: ",item['name'],"\ncategory: ", item['category'],"\nprice: ", item['price'],"\nstock: ", item['stock'])
+def search_products_by_category(category):
+    #this function searches products by their category
+    with open(data/products.json, 'r', encoding='utf-8') as productList:
+        for item in productList:
+            if category in item['category']:
+                print("id: ", item['id'], "\nname: ", item['name'], "\ncategory: ", item['category'], "\nprice: ",item['price'], "\nstock: ", item['stock'])
