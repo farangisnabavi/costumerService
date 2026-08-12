@@ -1,0 +1,702 @@
+[
+  {
+    "id": 1,
+    "name": "ASUS Laptop 879",
+    "category": "Ultrabook",
+    "price": 1299,
+    "stock": 0
+  },
+  {
+    "id": 2,
+    "name": "Dell Laptop 632",
+    "category": "Ultrabook",
+    "price": 599,
+    "stock": 4
+  },
+  {
+    "id": 3,
+    "name": "Dell Laptop 528",
+    "category": "Business",
+    "price": 649,
+    "stock": 17
+  },
+  {
+    "id": 4,
+    "name": "Lenovo Laptop 325",
+    "category": "Business",
+    "price": 499,
+    "stock": 6
+  },
+  {
+    "id": 5,
+    "name": "Apple Laptop 729",
+    "category": "Business",
+    "price": 1999,
+    "stock": 35
+  },
+  {
+    "id": 6,
+    "name": "HP Laptop 377",
+    "category": "2-in-1",
+    "price": 1099,
+    "stock": 19
+  },
+  {
+    "id": 7,
+    "name": "Apple Laptop 930",
+    "category": "Gaming",
+    "price": 799,
+    "stock": 13
+  },
+  {
+    "id": 8,
+    "name": "Apple Laptop 132",
+    "category": "Gaming",
+    "price": 999,
+    "stock": 23
+  },
+  {
+    "id": 9,
+    "name": "HP Laptop 504",
+    "category": "Student",
+    "price": 449,
+    "stock": 14
+  },
+  {
+    "id": 10,
+    "name": "Samsung Laptop 913",
+    "category": "2-in-1",
+    "price": 999,
+    "stock": 10
+  },
+  {
+    "id": 11,
+    "name": "ASUS Laptop 116",
+    "category": "Workstation",
+    "price": 599,
+    "stock": 12
+  },
+  {
+    "id": 12,
+    "name": "Lenovo Laptop 618",
+    "category": "Ultrabook",
+    "price": 549,
+    "stock": 19
+  },
+  {
+    "id": 13,
+    "name": "ASUS Laptop 512",
+    "category": "Gaming",
+    "price": 699,
+    "stock": 7
+  },
+  {
+    "id": 14,
+    "name": "Dell Laptop 260",
+    "category": "Workstation",
+    "price": 1199,
+    "stock": 12
+  },
+  {
+    "id": 15,
+    "name": "Dell Laptop 943",
+    "category": "Workstation",
+    "price": 899,
+    "stock": 12
+  },
+  {
+    "id": 16,
+    "name": "Samsung Laptop 332",
+    "category": "2-in-1",
+    "price": 399,
+    "stock": 26
+  },
+  {
+    "id": 17,
+    "name": "Lenovo Laptop 738",
+    "category": "Business",
+    "price": 899,
+    "stock": 8
+  },
+  {
+    "id": 18,
+    "name": "Acer Laptop 919",
+    "category": "2-in-1",
+    "price": 749,
+    "stock": 13
+  },
+  {
+    "id": 19,
+    "name": "Dell Laptop 473",
+    "category": "Student",
+    "price": 499,
+    "stock": 2
+  },
+  {
+    "id": 20,
+    "name": "HP Laptop 941",
+    "category": "Gaming",
+    "price": 1099,
+    "stock": 27
+  },
+  {
+    "id": 21,
+    "name": "Acer Laptop 801",
+    "category": "Workstation",
+    "price": 1699,
+    "stock": 34
+  },
+  {
+    "id": 22,
+    "name": "Dell Laptop 179",
+    "category": "Workstation",
+    "price": 999,
+    "stock": 32
+  },
+  {
+    "id": 23,
+    "name": "Apple Laptop 188",
+    "category": "Gaming",
+    "price": 1499,
+    "stock": 28
+  },
+  {
+    "id": 24,
+    "name": "Samsung Laptop 592",
+    "category": "Student",
+    "price": 699,
+    "stock": 22
+  },
+  {
+    "id": 25,
+    "name": "Apple Laptop 967",
+    "category": "Gaming",
+    "price": 849,
+    "stock": 17
+  },
+  {
+    "id": 26,
+    "name": "Samsung Laptop 767",
+    "category": "Business",
+    "price": 799,
+    "stock": 30
+  },
+  {
+    "id": 27,
+    "name": "MSI Laptop 779",
+    "category": "2-in-1",
+    "price": 399,
+    "stock": 3
+  },
+  {
+    "id": 28,
+    "name": "Acer Laptop 993",
+    "category": "Student",
+    "price": 1999,
+    "stock": 10
+  },
+  {
+    "id": 29,
+    "name": "Samsung Laptop 200",
+    "category": "2-in-1",
+    "price": 1699,
+    "stock": 8
+  },
+  {
+    "id": 30,
+    "name": "HP Laptop 678",
+    "category": "Student",
+    "price": 1299,
+    "stock": 17
+  },
+  {
+    "id": 31,
+    "name": "ASUS Laptop 519",
+    "category": "Student",
+    "price": 1099,
+    "stock": 31
+  },
+  {
+    "id": 32,
+    "name": "HP Laptop 442",
+    "category": "Ultrabook",
+    "price": 699,
+    "stock": 6
+  },
+  {
+    "id": 33,
+    "name": "HP Laptop 239",
+    "category": "Gaming",
+    "price": 1199,
+    "stock": 3
+  },
+  {
+    "id": 34,
+    "name": "ASUS Laptop 346",
+    "category": "Ultrabook",
+    "price": 599,
+    "stock": 19
+  },
+  {
+    "id": 35,
+    "name": "Samsung Laptop 667",
+    "category": "Ultrabook",
+    "price": 1199,
+    "stock": 31
+  },
+  {
+    "id": 36,
+    "name": "Acer Laptop 183",
+    "category": "Student",
+    "price": 1299,
+    "stock": 12
+  },
+  {
+    "id": 37,
+    "name": "Lenovo Laptop 922",
+    "category": "Student",
+    "price": 999,
+    "stock": 28
+  },
+  {
+    "id": 38,
+    "name": "Lenovo Laptop 880",
+    "category": "Gaming",
+    "price": 899,
+    "stock": 0
+  },
+  {
+    "id": 39,
+    "name": "Lenovo Laptop 894",
+    "category": "Ultrabook",
+    "price": 449,
+    "stock": 30
+  },
+  {
+    "id": 40,
+    "name": "Acer Laptop 400",
+    "category": "Student",
+    "price": 1699,
+    "stock": 23
+  },
+  {
+    "id": 41,
+    "name": "Samsung Laptop 116",
+    "category": "Ultrabook",
+    "price": 549,
+    "stock": 25
+  },
+  {
+    "id": 42,
+    "name": "HP Laptop 226",
+    "category": "Ultrabook",
+    "price": 499,
+    "stock": 8
+  },
+  {
+    "id": 43,
+    "name": "Samsung Laptop 197",
+    "category": "2-in-1",
+    "price": 1699,
+    "stock": 17
+  },
+  {
+    "id": 44,
+    "name": "ASUS Laptop 593",
+    "category": "2-in-1",
+    "price": 1099,
+    "stock": 11
+  },
+  {
+    "id": 45,
+    "name": "Dell Laptop 124",
+    "category": "Business",
+    "price": 1499,
+    "stock": 34
+  },
+  {
+    "id": 46,
+    "name": "Lenovo Laptop 638",
+    "category": "2-in-1",
+    "price": 1499,
+    "stock": 19
+  },
+  {
+    "id": 47,
+    "name": "Dell Laptop 728",
+    "category": "2-in-1",
+    "price": 999,
+    "stock": 15
+  },
+  {
+    "id": 48,
+    "name": "Acer Laptop 569",
+    "category": "Business",
+    "price": 649,
+    "stock": 14
+  },
+  {
+    "id": 49,
+    "name": "Apple Laptop 472",
+    "category": "Student",
+    "price": 1299,
+    "stock": 9
+  },
+  {
+    "id": 50,
+    "name": "Samsung Laptop 177",
+    "category": "Student",
+    "price": 699,
+    "stock": 9
+  },
+  {
+    "id": 51,
+    "name": "Acer Laptop 885",
+    "category": "Gaming",
+    "price": 999,
+    "stock": 25
+  },
+  {
+    "id": 52,
+    "name": "Acer Laptop 581",
+    "category": "Ultrabook",
+    "price": 849,
+    "stock": 17
+  },
+  {
+    "id": 53,
+    "name": "MSI Laptop 603",
+    "category": "Student",
+    "price": 599,
+    "stock": 17
+  },
+  {
+    "id": 54,
+    "name": "Acer Laptop 479",
+    "category": "2-in-1",
+    "price": 799,
+    "stock": 26
+  },
+  {
+    "id": 55,
+    "name": "Samsung Laptop 827",
+    "category": "Ultrabook",
+    "price": 1699,
+    "stock": 9
+  },
+  {
+    "id": 56,
+    "name": "Lenovo Laptop 677",
+    "category": "Gaming",
+    "price": 599,
+    "stock": 16
+  },
+  {
+    "id": 57,
+    "name": "Samsung Laptop 682",
+    "category": "Gaming",
+    "price": 549,
+    "stock": 34
+  },
+  {
+    "id": 58,
+    "name": "MSI Laptop 420",
+    "category": "Workstation",
+    "price": 649,
+    "stock": 2
+  },
+  {
+    "id": 59,
+    "name": "Samsung Laptop 422",
+    "category": "Workstation",
+    "price": 499,
+    "stock": 27
+  },
+  {
+    "id": 60,
+    "name": "Samsung Laptop 693",
+    "category": "Business",
+    "price": 1499,
+    "stock": 33
+  },
+  {
+    "id": 61,
+    "name": "ASUS Laptop 407",
+    "category": "Ultrabook",
+    "price": 999,
+    "stock": 14
+  },
+  {
+    "id": 62,
+    "name": "Samsung Laptop 775",
+    "category": "Student",
+    "price": 1699,
+    "stock": 5
+  },
+  {
+    "id": 63,
+    "name": "Lenovo Laptop 123",
+    "category": "2-in-1",
+    "price": 1099,
+    "stock": 25
+  },
+  {
+    "id": 64,
+    "name": "Dell Laptop 582",
+    "category": "Business",
+    "price": 1699,
+    "stock": 18
+  },
+  {
+    "id": 65,
+    "name": "Lenovo Laptop 288",
+    "category": "Gaming",
+    "price": 1099,
+    "stock": 11
+  },
+  {
+    "id": 66,
+    "name": "Samsung Laptop 900",
+    "category": "2-in-1",
+    "price": 549,
+    "stock": 10
+  },
+  {
+    "id": 67,
+    "name": "Dell Laptop 169",
+    "category": "Workstation",
+    "price": 699,
+    "stock": 27
+  },
+  {
+    "id": 68,
+    "name": "Samsung Laptop 193",
+    "category": "2-in-1",
+    "price": 1699,
+    "stock": 24
+  },
+  {
+    "id": 69,
+    "name": "MSI Laptop 673",
+    "category": "Ultrabook",
+    "price": 399,
+    "stock": 8
+  },
+  {
+    "id": 70,
+    "name": "Apple Laptop 988",
+    "category": "Ultrabook",
+    "price": 699,
+    "stock": 13
+  },
+  {
+    "id": 71,
+    "name": "Acer Laptop 882",
+    "category": "Business",
+    "price": 549,
+    "stock": 19
+  },
+  {
+    "id": 72,
+    "name": "Dell Laptop 101",
+    "category": "2-in-1",
+    "price": 1299,
+    "stock": 10
+  },
+  {
+    "id": 73,
+    "name": "Lenovo Laptop 981",
+    "category": "Business",
+    "price": 1199,
+    "stock": 35
+  },
+  {
+    "id": 74,
+    "name": "Dell Laptop 600",
+    "category": "Gaming",
+    "price": 1199,
+    "stock": 10
+  },
+  {
+    "id": 75,
+    "name": "HP Laptop 743",
+    "category": "Business",
+    "price": 899,
+    "stock": 3
+  },
+  {
+    "id": 76,
+    "name": "Acer Laptop 158",
+    "category": "Workstation",
+    "price": 549,
+    "stock": 17
+  },
+  {
+    "id": 77,
+    "name": "Lenovo Laptop 408",
+    "category": "2-in-1",
+    "price": 799,
+    "stock": 33
+  },
+  {
+    "id": 78,
+    "name": "HP Laptop 775",
+    "category": "Gaming",
+    "price": 699,
+    "stock": 14
+  },
+  {
+    "id": 79,
+    "name": "Dell Laptop 849",
+    "category": "Workstation",
+    "price": 799,
+    "stock": 32
+  },
+  {
+    "id": 80,
+    "name": "MSI Laptop 140",
+    "category": "Workstation",
+    "price": 1699,
+    "stock": 7
+  },
+  {
+    "id": 81,
+    "name": "MSI Laptop 282",
+    "category": "2-in-1",
+    "price": 399,
+    "stock": 22
+  },
+  {
+    "id": 82,
+    "name": "ASUS Laptop 416",
+    "category": "2-in-1",
+    "price": 649,
+    "stock": 19
+  },
+  {
+    "id": 83,
+    "name": "Lenovo Laptop 538",
+    "category": "Business",
+    "price": 1699,
+    "stock": 25
+  },
+  {
+    "id": 84,
+    "name": "Lenovo Laptop 439",
+    "category": "Business",
+    "price": 549,
+    "stock": 16
+  },
+  {
+    "id": 85,
+    "name": "Apple Laptop 258",
+    "category": "Workstation",
+    "price": 749,
+    "stock": 10
+  },
+  {
+    "id": 86,
+    "name": "ASUS Laptop 830",
+    "category": "Student",
+    "price": 749,
+    "stock": 3
+  },
+  {
+    "id": 87,
+    "name": "Samsung Laptop 759",
+    "category": "Student",
+    "price": 599,
+    "stock": 14
+  },
+  {
+    "id": 88,
+    "name": "Dell Laptop 816",
+    "category": "Business",
+    "price": 399,
+    "stock": 29
+  },
+  {
+    "id": 89,
+    "name": "Samsung Laptop 879",
+    "category": "Student",
+    "price": 599,
+    "stock": 8
+  },
+  {
+    "id": 90,
+    "name": "MSI Laptop 112",
+    "category": "Business",
+    "price": 1699,
+    "stock": 33
+  },
+  {
+    "id": 91,
+    "name": "Samsung Laptop 110",
+    "category": "Workstation",
+    "price": 1699,
+    "stock": 1
+  },
+  {
+    "id": 92,
+    "name": "Apple Laptop 562",
+    "category": "Student",
+    "price": 999,
+    "stock": 22
+  },
+  {
+    "id": 93,
+    "name": "HP Laptop 666",
+    "category": "Gaming",
+    "price": 749,
+    "stock": 29
+  },
+  {
+    "id": 94,
+    "name": "Samsung Laptop 750",
+    "category": "Business",
+    "price": 1699,
+    "stock": 4
+  },
+  {
+    "id": 95,
+    "name": "Acer Laptop 833",
+    "category": "Workstation",
+    "price": 749,
+    "stock": 14
+  },
+  {
+    "id": 96,
+    "name": "Acer Laptop 380",
+    "category": "Business",
+    "price": 899,
+    "stock": 12
+  },
+  {
+    "id": 97,
+    "name": "Dell Laptop 640",
+    "category": "Business",
+    "price": 599,
+    "stock": 28
+  },
+  {
+    "id": 98,
+    "name": "Apple Laptop 998",
+    "category": "Business",
+    "price": 1099,
+    "stock": 35
+  },
+  {
+    "id": 99,
+    "name": "Samsung Laptop 541",
+    "category": "Gaming",
+    "price": 849,
+    "stock": 8
+  },
+  {
+    "id": 100,
+    "name": "Samsung Laptop 937",
+    "category": "2-in-1",
+    "price": 999,
+    "stock": 26
+  }
+]
