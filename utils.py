@@ -44,3 +44,7 @@ def sort_by_price():
     #this function sortes by price
     with open(data/products.json, 'r', encoding='utf-8') as productList:
         print(sorted(productList, key=lambda x: x["price"]))
+def sort_by_stock():
+    #this function sortes by stock
+    with open(data/products.json, 'r', encoding='utf-8') as productList:
+        print(sorted(productList, key=lambda x: x["stock"]))
