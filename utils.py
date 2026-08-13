@@ -40,3 +40,7 @@ def show_products():
     with open(data/products.json, 'r', encoding='utf-8') as productList:
         for item in productList:
             print("id: ", item['id'],"\nname: ",item['name'],"\ncategory: ", item['category'],"\nprice: ", item['price'],"\nstock: ", item['stock'])
+def sort_by_price():
+    #this function sortes by price
+    with open(data/products.json, 'r', encoding='utf-8') as productList:
+        print(sorted(productList, key=lambda x: x["price"]))
