@@ -117,3 +117,11 @@ def edit_costumers(id, name, phone, city, vip, looking_for_id, looking_for_name)
             if looking_for_id in item['id'] and looking_for_name in item['name']:
                 item.update({"id": id, "name": name, "phone": phone, "city": city, "vip": vip})
         json.dump(product_list, f, ensure_ascii=False, indent=4)
+
+def show_costumers():
+    # this function prints users
+    with open("data/users.json", 'r', encoding='utf-8') as f:
+        product_list = json.load(f)
+        for item in product_list:
+            print("id: ", item['id'], "\nname: ", item['name'], "\nphone: ", item['phone'], "\ncity: ",
+                  item['city'], "\nvip: ", item['vip'])
