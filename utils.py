@@ -81,3 +81,21 @@ def sort_by_stock():
     with open("data/products.json", 'r', encoding='utf-8') as f:
         product_list = json.load(f)
         print(sorted(product_list, key=lambda x: x["stock"]))
+
+# ====================================================
+#                    COSTUMERS
+# ====================================================
+def add_costumer(id, name, phone, city, vip):
+    # this function adds costumers
+    with open("data/users.json", 'a', encoding='utf-8') as f:
+        product_list = json.load(f)
+    product_list.append({
+            'id': id,
+            'name': name,
+            'phone': phone,
+            'city': city,
+            'vip': vip
+    })
+    with open("data/users.json", 'w', encoding='utf-8') as f:
+        json.dump(product_list, f, ensure_ascii=False, indent=4)
+        
