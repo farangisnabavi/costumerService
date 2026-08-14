@@ -108,3 +108,12 @@ def remove_costumers(id, name):
             product_list.remove(item)
     with open("data/users.json", 'w', encoding='utf-8') as f:
         json.dump(product_list, f, ensure_ascii=False, indent=4)
+
+def edit_costumers(id, name, phone, city, vip, looking_for_id, looking_for_name):
+    # this function edits users
+    with open("data/users.json", 'rw', encoding='utf-8') as f:
+        product_list = json.load(f)
+        for item in product_list:
+            if looking_for_id in item['id'] and looking_for_name in item['name']:
+                item.update({"id": id, "name": name, "phone": phone, "city": city, "vip": vip})
+        json.dump(product_list, f, ensure_ascii=False, indent=4)
