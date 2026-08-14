@@ -98,4 +98,13 @@ def add_costumer(id, name, phone, city, vip):
     })
     with open("data/users.json", 'w', encoding='utf-8') as f:
         json.dump(product_list, f, ensure_ascii=False, indent=4)
-        
+
+def remove_costumers(id, name):
+    # this function deletes costumers
+    with open("data/users.json", 'rw', encoding='utf-8') as f:
+        product_list = json.load(f)
+    for item in product_list:
+        if id in item['id'] and name in item['name']:
+            product_list.remove(item)
+    with open("data/users.json", 'w', encoding='utf-8') as f:
+        json.dump(product_list, f, ensure_ascii=False, indent=4)
