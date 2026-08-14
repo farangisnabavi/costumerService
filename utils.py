@@ -125,3 +125,12 @@ def show_costumers():
         for item in product_list:
             print("id: ", item['id'], "\nname: ", item['name'], "\nphone: ", item['phone'], "\ncity: ",
                   item['city'], "\nvip: ", item['vip'])
+
+def search_costumers(name):
+    # this function searches users by their name
+    with open("data/users.json", 'r', encoding='utf-8') as f:
+        product_list = json.load(f)
+        for item in product_list:
+            if name in item['name']:
+                print("id: ", item['id'], "\nname: ", item['name'], "\ncphone ", item['phone'], "\ncity: ",
+                      item['city'], "\nvip: ", item['vip'])
