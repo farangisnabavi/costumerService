@@ -35,20 +35,15 @@ def edit_products(id, name, category, price, stock, looking_for_id, looking_for_
 def search_products_by_name(name):
     # this function searches products by their name
     product_list = utils.load_file(path)
-    for item in product_list:
-        if name in item['name']:
-            print("id: ", item['id'], "\nname: ", item['name'], "\ncategory: ", item['category'], "\nprice: ",
-                 item['price'], "\nstock: ", item['stock'])
-
+    name = input("enter product name: ")
+    print(utils.search("name", name, product_list))
 
 def search_products_by_category(category):
     # this function searches products by their category
     product_list = utils.load_file(path)
-    for item in product_list:
-        if category in item['category']:
-            print("id: ", item['id'], "\nname: ", item['name'], "\ncategory: ", item['category'], "\nprice: ",
-                      item['price'], "\nstock: ", item['stock'])
-
+    category = input("enter product category: ")
+    category = input("enter product category: ")
+    utils.search("category", category, product_list)
 
 def show_products():
     # this function prints products

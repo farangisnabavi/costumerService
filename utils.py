@@ -17,4 +17,3 @@ def search(column, value, file):
         if item[column] == value:
             items.append(item)
     return items
-

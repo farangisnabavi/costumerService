@@ -41,7 +41,5 @@ def show_costumers():
 def search_costumers(name):
     # this function searches users by their name
     costumer_list = utils.load_file(path)
-    for item in costumer_list:
-        if name in item['name']:
-            print("id: ", item['id'], "\nname: ", item['name'], "\ncphone ", item['phone'], "\ncity: ",
-                      item['city'], "\nvip: ", item['vip'])
+    name = input("enter your costumer name: ")
+    print(utils.search("name",name,costumer_list))
