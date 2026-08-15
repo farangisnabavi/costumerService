@@ -3,12 +3,16 @@ path = "data/products.json"
 # ====================================================
 #                    PRODUCTS
 # ====================================================
-def add_products(id, name, category, price, stock):
+def add_products():
     # this function adds products
     with open("data/products.json", 'a', encoding='utf-8') as f:
         product_list = utils.load_file(path)
+        name = input("enter product name: ")
+        category = input("enter product category: ")
+        price = int(input("enter product price: "))
+        stock = int(input("enter product stock: "))
     product_list.append({
-            'id': id,
+            'id': max(item['id'] for item in product_list) + 1,
             'name': name,
             'category': category,
             'price': price,
@@ -16,29 +20,38 @@ def add_products(id, name, category, price, stock):
     })
     utils.save_file(path, product_list)
 
-def remove_products(id, name):
+def remove_products():
     # this function deletes products
     product_list = utils.load_file(path)
+    id = input("enter product id: ")
+    name = input("enter product name: ")
     for item in product_list:
         if id in item['id'] and name in item['name']:
             product_list.remove(item)
     utils.save_file(path, product_list)
 
-def edit_products(id, name, category, price, stock, looking_for_id, looking_for_name):
+def edit_products():
     # this function edits products
     product_list = utils.load_file(path)
+    looking_for_id = input("enter product id: ")
+    looking_for_name = input("enter product name: ")
+    id = input("enter product id: ")
+    name = input("enter product name: ")
+    category = input("enter product category: ")
+    price = int(input("enter product price: "))
+    stock = int(input("enter product stock: "))
     for item in product_list:
         if looking_for_id in item['id'] and looking_for_name in item['name']:
              item.update({"id": id, "name": name, "category": category, "price": price, "stock": stock})
     utils.save_file(path, product_list)
 
-def search_products_by_name(name):
+def search_products_by_name():
     # this function searches products by their name
     product_list = utils.load_file(path)
     name = input("enter product name: ")
     print(utils.search("name", name, product_list))
 
-def search_products_by_category(category):
+def search_products_by_category():
     # this function searches products by their category
     product_list = utils.load_file(path)
     category = input("enter product category: ")
