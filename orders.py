@@ -23,3 +23,11 @@ def add_order():
         total += i["price"] * i["number"]
     orders_list.append({"id" : id, "costumer" : costumer, "products" : order_list, "total" : total})
     utils.save_file(path, orders_list)
+
+def print_total():
+    # prints totals
+    order_list=utils.load_file(path)
+    name = input("Enter costumer name: ")
+    items= utils.search("costumer", name, order_list)
+    for item in items:
+        print(item["id"], item["costumer"], item["products"],item["total"])
