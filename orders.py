@@ -40,3 +40,11 @@ def delete_order():
         if i["id"] == int(id):
             orders_list.remove(i)
     utils.save_file(path, orders_list)
+
+def orders_per_costumer():
+    # searches orders for a costumer
+    orders_list=utils.load_file(path)
+    costumer = input("Enter costumer name: ")
+    items = utils.search("costumer", costumer, orders_list)
+    for item in items:
+        print(item)
