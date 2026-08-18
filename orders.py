@@ -23,6 +23,13 @@ def add_order():
         total += i["price"] * i["number"]
     orders_list.append({"id" : id, "costumer" : costumer, "products" : order_list, "total" : total})
     utils.save_file(path, orders_list)
+    product_list = utils.load_file("data/products.json")
+    for i in product_list:
+        for j in order_list:
+            if j["name"] == i["product"]:
+                j["stock"] -= i["number"]
+    utils.save_file("data/products.json", product_list)
+
 
 def print_total():
     # prints totals
