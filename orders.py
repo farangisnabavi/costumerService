@@ -31,3 +31,12 @@ def print_total():
     items= utils.search("costumer", name, order_list)
     for item in items:
         print(item["id"], item["costumer"], item["products"],item["total"])
+
+def delete_order():
+    #deletes orders
+    orders_list=utils.load_file(path)
+    id = input("Enter order id: ")
+    for i in orders_list:
+        if i["id"] == int(id):
+            orders_list.remove(i)
+    utils.save_file(path, orders_list)
