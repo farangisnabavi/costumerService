@@ -29,6 +29,8 @@ def add_order():
             if j["name"] == i["product"]:
                 if not i["stock"] == 0 :
                     j["stock"] -= i["number"]
+                else:
+                    print("ناموجود")
     utils.save_file("data/products.json", product_list)
 
 
