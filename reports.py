@@ -16,3 +16,11 @@ def stock_worth():
     final_worth = reduce(lambda x,y: x+y, stocks_worth)
     print(final_worth)
 
+def all_stock():
+    #counts the stock
+    products = utils.load_file(productPath)
+    product_stock = []
+    for product in products:
+        product_stock.append(product["stock"])
+    count = reduce(lambda x,y: x+y, product_stock)
+    print(count)
