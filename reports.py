@@ -24,3 +24,12 @@ def all_stock():
         product_stock.append(product["stock"])
     count = reduce(lambda x,y: x+y, product_stock)
     print(count)
+
+def user_count():
+    #counts users
+    users = utils.load_file(usersPath)
+    count = 0
+    for i in users:
+        count = count+1
+    print(count)
+
