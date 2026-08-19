@@ -33,3 +33,11 @@ def user_count():
         count = count+1
     print(count)
 
+def vip_users_count():
+    #counts vip users
+    users = utils.load_file(usersPath)
+    count = 0
+    for i in users:
+        if i["vip"]:
+            count = count+1
+    print(count)
