@@ -27,7 +27,8 @@ def add_order():
     for i in product_list:
         for j in order_list:
             if j["name"] == i["product"]:
-                j["stock"] -= i["number"]
+                if not i["stock"] == 0 :
+                    j["stock"] -= i["number"]
     utils.save_file("data/products.json", product_list)
 
 
