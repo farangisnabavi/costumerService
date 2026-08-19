@@ -49,3 +49,12 @@ def count_orders():
     for i in orders:
         count = count+1
     print(count)
+
+def count_unavailable():
+    #shows unavailable products
+    products = utils.load_file(productPath)
+    unavailable = []
+    for i in products:
+        if i["stock"] == 0:
+            unavailable.append(i)
+    print(unavailable)
