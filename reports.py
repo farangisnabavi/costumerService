@@ -41,3 +41,11 @@ def vip_users_count():
         if i["vip"]:
             count = count+1
     print(count)
+
+def count_orders():
+    # counts orders
+    orders = utils.load_file(ordersPath)
+    count = 0
+    for i in orders:
+        count = count+1
+    print(count)
