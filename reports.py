@@ -58,3 +58,12 @@ def count_unavailable():
         if i["stock"] == 0:
             unavailable.append(i)
     print(unavailable)
+
+def less_than_5():
+    # shows products that their stock is less than 5
+    products = utils.load_file(productPath)
+    less_than_5 = []
+    for i in products:
+        if i["stock"] >= 5:
+            less_than_5.append(i)
+    print(less_than_5)
