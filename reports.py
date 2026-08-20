@@ -87,3 +87,16 @@ def count_by_category():
     for j in products:
         categories[j["category"]] += 1
     print(categories)
+
+def count_orders_per_user():
+    #counts orders for each costumer
+    orders = utils.load_file(ordersPath)
+    order = {}
+    for i in orders:
+        if i["user"] not in order:
+            order.update({i["user"]: 0})
+        else:
+            order[i["user"]] += 1
+    print(order)
+
+    
