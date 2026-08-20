@@ -5,12 +5,12 @@ path = "data/products.json"
 # ====================================================
 def add_products():
     # this function adds products
-    with open("data/products.json", 'a', encoding='utf-8') as f:
-        product_list = utils.load_file(path)
-        name = input("enter product name: ")
-        category = input("enter product category: ")
-        price = int(input("enter product price: "))
-        stock = int(input("enter product stock: "))
+
+    product_list = utils.load_file(path)
+    name = input("enter product name: ")
+    category = input("enter product category: ")
+    price = int(input("enter product price: "))
+    stock = int(input("enter product stock: "))
     product_list.append({
             'id': max(item['id'] for item in product_list) + 1,
             'name': name,
