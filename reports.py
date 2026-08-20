@@ -67,3 +67,11 @@ def less_than_5():
         if i["stock"] >= 5:
             less_than_5.append(i)
     print(less_than_5)
+
+def average_price():
+    products = utils.load_file(productPath)
+    prices = []
+    for i in products:
+        prices.append(i["price"])
+    average_price = reduce(lambda x,y: x+y, prices)/len(prices)
+    print(average_price)
