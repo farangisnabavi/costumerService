@@ -69,9 +69,21 @@ def less_than_5():
     print(less_than_5)
 
 def average_price():
+    #calculates the average price
     products = utils.load_file(productPath)
     prices = []
     for i in products:
         prices.append(i["price"])
     average_price = reduce(lambda x,y: x+y, prices)/len(prices)
     print(average_price)
+
+def count_by_category():
+    #counts by category
+    products = utils.load_file(productPath)
+    categories = {}
+    for i in products:
+        if i["category"] not in categories:
+            categories.update({i["category"]: 0})
+    for j in products:
+        categories[j["category"]] += 1
+    print(categories)
