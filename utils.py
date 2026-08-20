@@ -17,3 +17,7 @@ def search(column, value, file):
         if item[column] == value:
             items.append(item)
     return items
+
+def change_the_flag(flag):
+    flag = False
+    return flag
