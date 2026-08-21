@@ -1,5 +1,3 @@
-from operator import truediv
-
 import utils
 path = "data/orders.json"
 
@@ -26,9 +24,9 @@ def add_order():
     product_list = utils.load_file("data/products.json")
     for i in product_list:
         for j in order_list:
-            if j["name"] == i["product"]:
-                if not i["stock"] == 0 :
-                    j["stock"] -= i["number"]
+            if j["product"] == i["name"]:
+                if i["stock"] >= j["number"]:
+                    i["stock"] -= j["number"]
                 else:
                     print("ناموجود")
     utils.save_file("data/products.json", product_list)
