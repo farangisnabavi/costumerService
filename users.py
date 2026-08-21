@@ -11,7 +11,7 @@ def add_costumer():
     city = input("enter your city: ")
     vip = input("enter if vip: ")
     costumer_list.append({
-            'id': max(item['id'] for item in costumer_list) + 1,
+            'id': int(max(item['id'] for item in costumer_list) + 1),
             'name': name,
             'phone': phone,
             'city': city,
@@ -34,7 +34,7 @@ def edit_costumers():
     costumer_list = utils.load_file(path)
     looking_for_id = input("enter your costumer id: ")
     looking_for_name = input("enter your costumer name: ")
-    id = input("enter your costumer id: ")
+    id = int(input("enter your costumer id: "))
     name = input("enter your costumer name: ")
     phone = input("enter your phone: ")
     city = input("enter your city: ")

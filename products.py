@@ -12,7 +12,7 @@ def add_products():
     price = int(input("enter product price: "))
     stock = int(input("enter product stock: "))
     product_list.append({
-            'id': max(item['id'] for item in product_list) + 1,
+            'id': int(max(item['id'] for item in product_list) + 1),
             'name': name,
             'category': category,
             'price': price,

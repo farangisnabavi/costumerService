@@ -6,7 +6,7 @@ path = "data/orders.json"
 def add_order():
     # this function added projects
     orders_list=utils.load_file(path)
-    id = max(item['id'] for item in orders_list) + 1
+    id = int(max(item['id'] for item in orders_list) + 1)
     costumer = input("Enter your costumer: ")
     flag = True
     order_list = []
