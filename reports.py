@@ -62,10 +62,7 @@ def count_unavailable():
 def less_than_5():
     # shows products that their stock is less than 5
     products = utils.load_file(productPath)
-    less_than_5 = []
-    for i in products:
-        if i["stock"] >= 5:
-            less_than_5.append(i)
+    less_than_5 = filter(lambda i: i["stock"] >= 5, products)
     print(less_than_5)
 
 def average_price():
