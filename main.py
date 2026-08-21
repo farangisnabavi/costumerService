@@ -20,6 +20,7 @@ while flag:
             orders.orders_per_costumer()
         else:
             print("out of range. try again.")
+        whichPart = ""
     elif whichPart == "2":
         print("1.add products\n2.remove products\n3.update products\n4.search products by name\n5.search products by category\n6.show products\n7.sort by price\n8.sort by stock")
         whichProductsFunction = input("Please enter which order option to use: ")
@@ -41,6 +42,7 @@ while flag:
             products.sort_by_stock()
         else:
             print("out of range. try again.")
+        whichPart = ""
     elif whichPart == "3":
         print("1.stock worth\n2.count stock\n3.count costumers\n4.vip users count\n5.orders count\n6.unavailable products\n7.products that have less than five\n8.average price\n9.count by category\n10.count per user")
         whichReportFunction = input("Please enter which report option to use: ")
@@ -66,6 +68,7 @@ while flag:
             reports.count_orders_per_user()
         else:
             print("out of range. try again.")
+        whichPart = ""
     elif whichPart == "4":
         print("1.add costumer\n2.remove costumer\n3.edit costumer\n4.show costumers\n5.search costumers")
         whichCostumerFunction = input("Please enter which costumer option to use: ")
@@ -81,5 +84,6 @@ while flag:
             users.search_costumers()
         else:
             print("out of range. try again.")
+        whichPart = ""
     else:
         print("out of range. try again.")
