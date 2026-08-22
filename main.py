@@ -87,3 +87,6 @@ while flag:
         whichPart = ""
     else:
         print("out of range. try again.")
+    exit = input("Do you want to exit?(y/n): ")
+    if exit == "y":
+        flag = False
