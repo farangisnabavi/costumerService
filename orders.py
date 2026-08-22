@@ -55,8 +55,15 @@ def delete_order():
         id = input("Enter order id: ")
         for i in orders_list:
             if i["id"] == int(id):
-                orders_list.remove(i)
-                print("پاک شد")
+                product_list = utils.load_file("data/products.json")
+                for i in product_list:
+                    for j in orders_list:
+                        if j["product"] == i["name"]:
+                            if i["stock"] >= j["number"]:
+                                i["stock"] += j["number"]
+                                utils.save_file(path, orders_list)
+                                orders_list.remove(i)
+                                print("پاک شد")
             else:
                 print("پیدا نشد")
         utils.save_file(path, orders_list)
