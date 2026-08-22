@@ -18,6 +18,7 @@ def add_costumer():
             'vip': vip
     })
     utils.save_file(path, costumer_list)
+    print("costumer added")
 
 def remove_costumers():
     # this function deletes costumers
@@ -27,6 +28,9 @@ def remove_costumers():
     for item in costumer_list:
         if id == item['id'] and name == item['name']:
             costumer_list.remove(item)
+            print("costumer removed")
+        else:
+            print("costumer not found")
     utils.save_file(path, costumer_list)
 
 def edit_costumers():
@@ -42,6 +46,9 @@ def edit_costumers():
     for item in costumer_list:
         if looking_for_id == item['id'] and looking_for_name == item['name']:
             item.update({"id": id, "name": name, "phone": phone, "city": city, "vip": vip})
+            print("costumer edited")
+        else:
+            print("costumer not found")
     utils.save_file(path, costumer_list)
 
 def show_costumers():

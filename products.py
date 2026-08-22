@@ -19,6 +19,7 @@ def add_products():
             'stock': stock
     })
     utils.save_file(path, product_list)
+    print("saved")
 
 def remove_products():
     product_list = utils.load_file(path)
@@ -27,6 +28,9 @@ def remove_products():
     for item in product_list:
         if item["id"] == id and item["name"] == name:
             product_list.remove(item)
+            print("removed")
+        else:
+            print("not found")
     utils.save_file(path, product_list)
 
 def edit_products():
@@ -42,6 +46,9 @@ def edit_products():
     for item in product_list:
         if looking_for_id == item["id"] and looking_for_name == item["name"]:
              item.update({"id": id, "name": name, "category": category, "price": price, "stock": stock})
+             print("updated")
+        else:
+            print("not found")
     utils.save_file(path, product_list)
 
 def search_products_by_name():

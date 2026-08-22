@@ -20,13 +20,14 @@ def add_order():
     for i in order_list:
         total += i["price"] * i["number"]
     orders_list.append({"id" : id, "costumer" : costumer, "products" : order_list, "total" : total})
-    utils.save_file(path, orders_list)
     product_list = utils.load_file("data/products.json")
     for i in product_list:
         for j in order_list:
             if j["product"] == i["name"]:
                 if i["stock"] >= j["number"]:
                     i["stock"] -= j["number"]
+                    utils.save_file(path, orders_list)
+                    print("ذخیره شد")
                 else:
                     print("ناموجود")
     utils.save_file("data/products.json", product_list)
@@ -47,6 +48,9 @@ def delete_order():
     for i in orders_list:
         if i["id"] == int(id):
             orders_list.remove(i)
+            print("پاک شد")
+        else:
+            "پیدا نشد"
     utils.save_file(path, orders_list)
 
 def orders_per_costumer():
