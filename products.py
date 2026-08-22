@@ -21,27 +21,26 @@ def add_products():
     utils.save_file(path, product_list)
 
 def remove_products():
-    # this function deletes products
     product_list = utils.load_file(path)
-    id = input("enter product id: ")
-    name = input("enter product name: ")
+    id = int(input("Enter product id: "))
+    name = input("Enter product name: ")
     for item in product_list:
-        if id in item['id'] and name in item['name']:
+        if item["id"] == id and item["name"] == name:
             product_list.remove(item)
     utils.save_file(path, product_list)
 
 def edit_products():
     # this function edits products
     product_list = utils.load_file(path)
-    looking_for_id = input("enter product id: ")
+    looking_for_id = int(input("enter product id: "))
     looking_for_name = input("enter product name: ")
-    id = input("enter product id: ")
+    id = int(input("enter product id: "))
     name = input("enter product name: ")
     category = input("enter product category: ")
     price = int(input("enter product price: "))
     stock = int(input("enter product stock: "))
     for item in product_list:
-        if looking_for_id in item['id'] and looking_for_name in item['name']:
+        if looking_for_id == item["id"] and looking_for_name == item["name"]:
              item.update({"id": id, "name": name, "category": category, "price": price, "stock": stock})
     utils.save_file(path, product_list)
 
@@ -55,8 +54,8 @@ def search_products_by_category():
     # this function searches products by their category
     product_list = utils.load_file(path)
     category = input("enter product category: ")
-    category = input("enter product category: ")
-    utils.search("category", category, product_list)
+    items = utils.search("category", category, product_list)
+    print(items)
 
 def show_products():
     # this function prints products
