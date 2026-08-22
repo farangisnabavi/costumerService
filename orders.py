@@ -1,4 +1,5 @@
 import utils
+from datetime  import datetime
 path = "data/orders.json"
 
 def add_order():
@@ -20,7 +21,7 @@ def add_order():
         total = 0
         for i in order_list:
             total += i["price"] * i["number"]
-        orders_list.append({"id" : id, "costumer" : costumer, "products" : order_list, "total" : total})
+        orders_list.append({"id" : id, "costumer" : costumer, "products" : order_list, "total" : total , "added at": str(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))})
         product_list = utils.load_file("data/products.json")
         for i in product_list:
             for j in order_list:
