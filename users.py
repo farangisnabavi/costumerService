@@ -23,16 +23,16 @@ def remove_costumers():
     # this function deletes costumers
     costumer_list = utils.load_file(path)
     name = input("enter your costumer name to remove: ")
-    id = input("enter your costumer id: ")
+    id = int(input("enter your costumer id: "))
     for item in costumer_list:
-        if id in item['id'] and name in item['name']:
+        if id == item['id'] and name == item['name']:
             costumer_list.remove(item)
     utils.save_file(path, costumer_list)
 
 def edit_costumers():
     # this function edits users
     costumer_list = utils.load_file(path)
-    looking_for_id = input("enter your costumer id: ")
+    looking_for_id = int(input("enter your costumer id: "))
     looking_for_name = input("enter your costumer name: ")
     id = int(input("enter your costumer id: "))
     name = input("enter your costumer name: ")
@@ -40,7 +40,7 @@ def edit_costumers():
     city = input("enter your city: ")
     vip = input("enter if vip: ")
     for item in costumer_list:
-        if looking_for_id in item['id'] and looking_for_name in item['name']:
+        if looking_for_id == item['id'] and looking_for_name == item['name']:
             item.update({"id": id, "name": name, "phone": phone, "city": city, "vip": vip})
     utils.save_file(path, costumer_list)
 
