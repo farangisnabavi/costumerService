@@ -62,7 +62,7 @@ def count_unavailable():
 def less_than_5():
     # shows products that their stock is less than 5
     products = utils.load_file(productPath)
-    less_than_5 = filter(lambda i: i["stock"] >= 5, products)
+    less_than_5 = list(filter(lambda i: i["stock"] >= 5, products))
     print(less_than_5)
 
 def average_price():
@@ -90,10 +90,10 @@ def count_orders_per_user():
     orders = utils.load_file(ordersPath)
     order = {}
     for i in orders:
-        if i["user"] not in order:
-            order.update({i["user"]: 0})
+        if i["costumer"] not in order:
+            order.update({i["costumer"]: 0})
         else:
-            order[i["user"]] += 1
+            order[i["costumer"]] += 1
     print(order)
 
     
