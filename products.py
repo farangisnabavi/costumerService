@@ -5,64 +5,78 @@ path = "data/products.json"
 # ====================================================
 def add_products():
     # this function adds products
-
-    product_list = utils.load_file(path)
-    name = input("enter product name: ")
-    category = input("enter product category: ")
-    price = int(input("enter product price: "))
-    stock = int(input("enter product stock: "))
-    product_list.append({
+    try:
+        product_list = utils.load_file(path)
+        name = input("enter product name: ")
+        category = input("enter product category: ")
+        price = int(input("enter product price: "))
+        stock = int(input("enter product stock: "))
+        product_list.append({
             'id': int(max(item['id'] for item in product_list) + 1),
             'name': name,
             'category': category,
             'price': price,
             'stock': stock
-    })
-    utils.save_file(path, product_list)
-    print("saved")
+        })
+        utils.save_file(path, product_list)
+        print("saved")
+    except:
+        print("something went wrong")
 
 def remove_products():
-    product_list = utils.load_file(path)
-    id = int(input("Enter product id: "))
-    name = input("Enter product name: ")
-    for item in product_list:
-        if item["id"] == id and item["name"] == name:
-            product_list.remove(item)
-            print("removed")
-        else:
-            print("not found")
-    utils.save_file(path, product_list)
+    try:
+        product_list = utils.load_file(path)
+        id = int(input("Enter product id: "))
+        name = input("Enter product name: ")
+        for item in product_list:
+            if item["id"] == id and item["name"] == name:
+                product_list.remove(item)
+                print("removed")
+            else:
+                print("not found")
+        utils.save_file(path, product_list)
+    except:
+        print("something went wrong")
 
 def edit_products():
     # this function edits products
-    product_list = utils.load_file(path)
-    looking_for_id = int(input("enter product id: "))
-    looking_for_name = input("enter product name: ")
-    id = int(input("enter product id: "))
-    name = input("enter product name: ")
-    category = input("enter product category: ")
-    price = int(input("enter product price: "))
-    stock = int(input("enter product stock: "))
-    for item in product_list:
-        if looking_for_id == item["id"] and looking_for_name == item["name"]:
-             item.update({"id": id, "name": name, "category": category, "price": price, "stock": stock})
-             print("updated")
-        else:
-            print("not found")
-    utils.save_file(path, product_list)
+    try:
+        product_list = utils.load_file(path)
+        looking_for_id = int(input("enter product id: "))
+        looking_for_name = input("enter product name: ")
+        id = int(input("enter product id: "))
+        name = input("enter product name: ")
+        category = input("enter product category: ")
+        price = int(input("enter product price: "))
+        stock = int(input("enter product stock: "))
+        for item in product_list:
+            if looking_for_id == item["id"] and looking_for_name == item["name"]:
+                 item.update({"id": id, "name": name, "category": category, "price": price, "stock": stock})
+                 print("updated")
+            else:
+                print("not found")
+        utils.save_file(path, product_list)
+    except:
+        print("something went wrong")
 
 def search_products_by_name():
     # this function searches products by their name
-    product_list = utils.load_file(path)
-    name = input("enter product name: ")
-    print(utils.search("name", name, product_list))
+    try:
+        product_list = utils.load_file(path)
+        name = input("enter product name: ")
+        print(utils.search("name", name, product_list))
+    except:
+        print("something went wrong")
 
 def search_products_by_category():
     # this function searches products by their category
-    product_list = utils.load_file(path)
-    category = input("enter product category: ")
-    items = utils.search("category", category, product_list)
-    print(items)
+    try:
+        product_list = utils.load_file(path)
+        category = input("enter product category: ")
+        items = utils.search("category", category, product_list)
+        print(items)
+    except:
+        print("something went wrong")
 
 def show_products():
     # this function prints products
